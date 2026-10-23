@@ -54,4 +54,4 @@ python -m pytest tests/live_api/test_acceptance_report.py --live-api -q --junitx
 
 最终主程序与工具重新构建为同一源码标识 `96560392f810e795c578a74048d56ba389f8e81b47df4b1ce0cd9e29ec2ae873`，原数据、模型和数据库保留。最新冻结本地链五项实际检查全部通过，含混合检索、CPU 重排及 MySQL 只读授权；CLI 结束后所属服务清理。安装验证最初由脚本和实际 CLI 重复持有 application.lock，被正确拒绝为 INVALID_STATE；改为转交锁后通过，拒绝原件与回滚材料保留，不归为依赖缺失或放松锁校验。
 
-本阶段没有把干净 Windows、许可核验或 GitHub 发布改成通过，也没有向 HR 发送消息。完整内容、来源冲突和实际 GUI 确认按各自证据记录。
+源码已提交 [GitHub](https://github.com/daninyc/windows-video-converter-agent)，已验证远端 main 与本地提交一致、README/复盘/证据可匿名读取，见 [回执](evidence/github-delivery.json)。没有发布二进制 Release，没有代填干净 Windows、许可核验或人工应用参数确认，也没有向 HR 发送消息。

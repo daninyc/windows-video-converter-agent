@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "repository_url": "https://github.com/daninyc/windows-video-converter-agent",
+  "branch": "main",
+  "verified_commit": "6d8131c066e1ba12741fe008675806e6e6284b97",
+  "verified_at": "2026-10-23T17:50:59.716165+08:00",
+  "anonymous_read_verified": true,
+  "verified_files": [
+    "README.md",
+    "AI协作开发复盘.md",
+    "docs/LIVE_MODEL_REPORT.md",
+    "docs/evidence/live-model-summary.json"
+  ],
+  "source_only": true,
+  "binary_release_created": false,
+  "scope": "Source project delivery; independent clean Windows, human RAG labels and binary distribution license remain separate gates."
+}

@@ -287,3 +287,9 @@ GitHub 只读预检通过：当前已有 Git Credential Manager 账号 `daninyc`
 根目录 [AI协作开发复盘.md](../AI协作开发复盘.md) 与 README 入口已完成，包含对话复盘、八份优化提示词、用户决策与 AI 执行边界。公开证据仅包含合成资料、实际回答和脱敏路径，不含 Key、模型、数据库或原始私人视频。GitHub 仓库已按授权创建为 [daninyc/windows-video-converter-agent](https://github.com/daninyc/windows-video-converter-agent)，源码提交与公开可读验证完成后另附回执；尚未创建二进制 Release，也未向 HR 发消息。
 
 用户最后要求“完成后关机”。仅在测试、源码提交与结果保存完成后安排正常关机；不提前停工，不使用强制关闭参数。RAG 人工标签、人工应用参数建议、独立 Windows 和精确二进制许可仍如实保留。
+
+## 21. 2026-10-23 GitHub 提交与公开访问已核实
+
+源码初次提交 `6d8131c066e1ba12741fe008675806e6e6284b97` 已推送至 [daninyc/windows-video-converter-agent](https://github.com/daninyc/windows-video-converter-agent)。Git 远端 main 与本地一致；未带认证的 GitHub API 实际读取仓库、README、根目录对话复盘、在线报告和脱敏证据均成功。使用 GitHub noreply 作者地址，未将个人邮箱、凭据、模型、数据库、artifacts 或候选包加入提交。交付回执见 [evidence/github-delivery.json](evidence/github-delivery.json)。随后补充本回执和最终文档状态。
+
+最后候选的基础包隔离 PATH 导入/转换/解码检查通过；静态检查、193 个 Python 文件格式、文档链接/凭据检查通过。真实模型六项审计已通过，不重跑已完成且无相关变更的检查。私有服务及测试窗口均已正常结束；接下来在保存最终远端确认后安排用户要求的正常关机。
