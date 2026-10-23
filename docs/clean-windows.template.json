@@ -1,0 +1,21 @@
+{
+  "status": "not_run",
+  "reviewer": "",
+  "tested_at": "",
+  "machine": {"windows": "", "cpu": "", "ram_gib": null, "free_disk_gib": null},
+  "core_sha256": "",
+  "tools_sha256": "",
+  "no_development_python_or_ffmpeg": null,
+  "fresh_data_directory": null,
+  "five_input_formats": null,
+  "three_output_formats": null,
+  "first_ai_download_seconds": null,
+  "private_mysql_initialized": null,
+  "real_local_rag_sql_file_checks": null,
+  "cancel_retry_exit_cleanup": null,
+  "cold_seconds": null,
+  "warm_seconds": null,
+  "online_tool_answer_proposal_restart": null,
+  "evidence": [],
+  "issues": []
+}

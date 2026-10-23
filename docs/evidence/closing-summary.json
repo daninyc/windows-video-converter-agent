@@ -1,0 +1,161 @@
+{
+  "generated_at_beijing": "2026-10-23T12:03:59.621755+08:00",
+  "local_review_ready": true,
+  "complete_public_delivery_ready": false,
+  "source_id": "441a49480462bd0846f49b578eecd6b968dd5a9452629e9a12023b8d5e293faa",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "artifacts": [
+    {
+      "file": "MediaConverter-Windows-x64.zip",
+      "sha256": "5246ea4e0024f667f3ee2fb161f2a478943470ab47eda2c4a8d6203a8bdd2df7",
+      "bytes": 158459239,
+      "source_id": "441a49480462bd0846f49b578eecd6b968dd5a9452629e9a12023b8d5e293faa"
+    },
+    {
+      "file": "MediaConverter-AI-Windows-x64.zip",
+      "sha256": "6c23795ca5794af2e38070344cba242e946843944a1ec4006d0f50afca59eac2",
+      "bytes": 271993784,
+      "source_id": "441a49480462bd0846f49b578eecd6b968dd5a9452629e9a12023b8d5e293faa"
+    }
+  ],
+  "tests": {
+    "groups": [
+      {
+        "report": "closing-regression.xml",
+        "passed": 232,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "report": "closing-installer-fix.xml",
+        "passed": 24,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "report": "closing-tools.xml",
+        "passed": 5,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "report": "packaged-desktop.xml",
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "report": "delivery.xml",
+        "passed": 5,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "report": "ai-package.xml",
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "report": "rag-evaluation-final.xml",
+        "passed": 1,
+        "failed": 0,
+        "skipped": 1
+      }
+    ],
+    "unique": {
+      "passed": 239,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "core_package_smoke": true,
+  "normal_packaged_desktop": true,
+  "ai_frozen_private_checks": [
+    {
+      "component": "video",
+      "ok": true,
+      "seconds": 1.547
+    },
+    {
+      "component": "mcp",
+      "ok": true,
+      "seconds": 3.127
+    },
+    {
+      "component": "knowledge",
+      "ok": true,
+      "seconds": 51.417
+    },
+    {
+      "component": "mysql",
+      "ok": true,
+      "seconds": 0.677
+    },
+    {
+      "component": "files",
+      "ok": true,
+      "seconds": 0.829
+    }
+  ],
+  "ai_used_verified_cache": true,
+  "ai_native_storage_limit": "short ASCII root required on tested host",
+  "rag": {
+    "dataset_sha256": "0f8d0e1e99f278f03092632b5de1aa501406202718eeb05147c2ac3e40ce2823",
+    "top5_hits_out_of_20": {
+      "dense": 20,
+      "lexical": 19,
+      "hybrid": 20,
+      "hybrid_rerank": 20
+    },
+    "outside_insufficient": 5,
+    "automatic_gate_passed": true,
+    "human_review_complete": false,
+    "threshold_tuned_on_dataset": false,
+    "online_search_used": false
+  },
+  "mcp": {
+    "round_successes": [
+      100,
+      100,
+      100
+    ],
+    "actual_executions": [
+      80,
+      80,
+      80
+    ],
+    "faults_passed": true
+  },
+  "video_pressure": {
+    "accepted_basis": "previous measured pass; final retest waived by user",
+    "full_queue": {
+      "total": 52,
+      "completed": 52,
+      "succeeded": 52,
+      "failed": 0,
+      "cancelled": 0
+    },
+    "heartbeat": {
+      "period_ms": 50,
+      "samples": 8945,
+      "p95_ms": 65.18720000167377,
+      "max_ms": 119.99880000075791,
+      "during_conversion_samples": 8826,
+      "during_conversion_p95_ms": 65.12620000285096
+    },
+    "cancel_ui_ms": 49.2073999994318,
+    "ffmpeg_stop_ms": 1299.2187999989255,
+    "ffmpeg_peak": 1,
+    "full_decode_long_and_4k": true
+  },
+  "online_api_called": false,
+  "remaining": [
+    "human desktop and media acceptance",
+    "human RAG labels",
+    "clean Windows acceptance",
+    "real API and search acceptance",
+    "distribution license and corresponding sources",
+    "GitHub target, rights and publication"
+  ]
+}

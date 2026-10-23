@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-10-23T04:42:29.210Z",
+  "issue": "Existing private services were stopped; reuse mode read configuration without restoring them before indexing.",
+  "resolved": true,
+  "regression": {
+    "passed": 21,
+    "failed": 0,
+    "report": "artifacts/reports/setup-recovery-regression.xml",
+    "new_cases_included": 8
+  },
+  "frozen_reuse_check": {
+    "ok": true,
+    "checks": [
+      {
+        "component": "video",
+        "ok": true,
+        "seconds": 1.553
+      },
+      {
+        "component": "mcp",
+        "ok": true,
+        "seconds": 2.971
+      },
+      {
+        "component": "knowledge",
+        "ok": true,
+        "seconds": 43.636
+      },
+      {
+        "component": "mysql",
+        "ok": true,
+        "seconds": 0.675
+      },
+      {
+        "component": "files",
+        "ok": true,
+        "seconds": 0.844
+      }
+    ],
+    "private_services_stopped_after_check": true,
+    "report": "artifacts/reports/setup-recovery-frozen.json"
+  },
+  "ui": {
+    "visual_review_complete": true,
+    "status": "本地 AI 已就绪；五项本地能力均可用",
+    "screenshot": "artifacts/ui/setup-recovery.png",
+    "human_acceptance_approved": false
+  },
+  "private_services": {
+    "ollama_port": 20104,
+    "qdrant_port": 3124,
+    "mysql_port": 13256
+  },
+  "build": {
+    "artifacts": [
+      {
+        "file": "MediaConverter-Windows-x64.zip",
+        "sha256": "bf0a08cea8abafb151f664e0425954c8b489bdc043f33c95a71beac6f8865639",
+        "bytes": 158458109,
+        "source_id": "3153674b5b4aaec66984372b299cf2daf8a3f28d8a5800cf3656163357c2a2cb"
+      },
+      {
+        "file": "MediaConverter-AI-Windows-x64.zip",
+        "sha256": "bf6498a6bb839df6410708212be33221e2358f28a5ecef173241b9ae8326f874",
+        "bytes": 271993381,
+        "source_id": "3153674b5b4aaec66984372b299cf2daf8a3f28d8a5800cf3656163357c2a2cb"
+      }
+    ],
+    "release_ready": false
+  },
+  "retained_worker": "The deployed, already validated AI worker is unchanged; this fix is in the desktop host. The rebuilt tools candidate is separate from the deployed worker.",
+  "online_called": false,
+  "stress_rerun": false,
+  "clean_windows_verified": false,
+  "release_ready": false,
+  "runtime_versions": {
+    "host": "3153674b5b4aaec66984372b299cf2daf8a3f28d8a5800cf3656163357c2a2cb",
+    "deployed_worker": "441a49480462bd0846f49b578eecd6b968dd5a9452629e9a12023b8d5e293faa"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "embedding_manifest": {
+    "schemaVersion": 2,
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "config": {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "digest": "sha256:0c4c9c2a325fb1cdafec606e6809cb745f1cb26a6d919994400d27372303e276",
+      "size": 337
+    },
+    "layers": [
+      {
+        "mediaType": "application/vnd.ollama.image.model",
+        "digest": "sha256:daec91ffb5dd0c27411bd71f29932917c49cf529a641d0168496c3a501e3062c",
+        "size": 1157671200
+      },
+      {
+        "mediaType": "application/vnd.ollama.image.license",
+        "digest": "sha256:a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde",
+        "size": 1068
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "ffmpeg",
+      "version": "9.0.2",
+      "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip",
+      "digest": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba",
+      "size": 114768076,
+      "destination": "ffmpeg",
+      "license": "GPL-3.0-or-later",
+      "algorithm": "sha256",
+      "archive": true,
+      "expanded_limit": 330270311
+    },
+    {
+      "name": "qdrant",
+      "version": "1.19.2",
+      "url": "https://github.com/qdrant/qdrant/releases/download/v1.19.2/qdrant-x86_64-pc-windows-msvc.zip",
+      "digest": "7d86596f16c6e85d45a50312f5e16ccb51e059b62e3d7308110cb65b4c799a4d",
+      "size": 30243552,
+      "destination": "qdrant",
+      "license": "Apache-2.0",
+      "algorithm": "sha256",
+      "archive": true,
+      "expanded_limit": 87578112
+    },
+    {
+      "name": "ollama",
+      "version": "0.40.7",
+      "url": "https://github.com/ollama/ollama/releases/download/v0.40.7/ollama-windows-amd64.zip",
+      "digest": "e6527768c53e85ec4596495fb0f035ef07f437b4b591ebc3581684699a4668f4",
+      "size": 1582514985,
+      "destination": "ollama",
+      "license": "MIT",
+      "algorithm": "sha256",
+      "archive": true,
+      "expanded_limit": 2221241081
+    },
+    {
+      "name": "mysql",
+      "version": "26.7.0",
+      "url": "https://cdn.mysql.com/archives/mysql-26.7/mysql-26.7.0-winx64.zip",
+      "digest": "e8d5b08f0d430555497679fa713a9649953ea067f952708a74cdcdf34f8e4b7d",
+      "size": 346094875,
+      "destination": "mysql",
+      "license": "GPL-2.0-with-universal-foss-exception",
+      "algorithm": "sha256",
+      "archive": true,
+      "expanded_limit": 1412124818
+    },
+    {
+      "name": "reranker-readme-md",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/README.md",
+      "digest": "553540879ec61aea21df00434c984c0f760a3fcc",
+      "size": 17229,
+      "destination": "models/reranker/README.md",
+      "license": "Apache-2.0",
+      "algorithm": "git-blob-sha1",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "reranker-config-json",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json",
+      "digest": "9f62673cb00ec41dcec8947b9ed16f6f2eb23ba2",
+      "size": 795,
+      "destination": "models/reranker/config.json",
+      "license": "Apache-2.0",
+      "algorithm": "git-blob-sha1",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "reranker-model-safetensors",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/model.safetensors",
+      "digest": "d9e3e081faff1eefb84019509b2f5558fd74c1a05a2c7db22f74174fcedb5286",
+      "size": 2271071852,
+      "destination": "models/reranker/model.safetensors",
+      "license": "Apache-2.0",
+      "algorithm": "sha256",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "reranker-sentencepiece-bpe-model",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/sentencepiece.bpe.model",
+      "digest": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "size": 5069051,
+      "destination": "models/reranker/sentencepiece.bpe.model",
+      "license": "Apache-2.0",
+      "algorithm": "sha256",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "reranker-special-tokens-map-json",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/special_tokens_map.json",
+      "digest": "b1879d702821e753ffe4245048eee415d54a9385",
+      "size": 964,
+      "destination": "models/reranker/special_tokens_map.json",
+      "license": "Apache-2.0",
+      "algorithm": "git-blob-sha1",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "reranker-tokenizer-json",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer.json",
+      "digest": "69564b696052886ed0ac63fa393e928384e0f8caada38c1f4864a9bfbf379c15",
+      "size": 17098273,
+      "destination": "models/reranker/tokenizer.json",
+      "license": "Apache-2.0",
+      "algorithm": "sha256",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "reranker-tokenizer-config-json",
+      "version": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json",
+      "digest": "328a00a9a560aadcf2a3064f917517359eb3cc26",
+      "size": 1173,
+      "destination": "models/reranker/tokenizer_config.json",
+      "license": "Apache-2.0",
+      "algorithm": "git-blob-sha1",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "bge-0c4c9c2a325f",
+      "version": "9f9fde527ed75fe41f8782fd3d25524d72aa52cc4b3e1cafbfb38c473f6f561e",
+      "url": "https://registry.ollama.ai/v2/library/bge-m3/blobs/sha256:0c4c9c2a325fb1cdafec606e6809cb745f1cb26a6d919994400d27372303e276",
+      "digest": "0c4c9c2a325fb1cdafec606e6809cb745f1cb26a6d919994400d27372303e276",
+      "size": 337,
+      "destination": "models/ollama/blobs/sha256-0c4c9c2a325fb1cdafec606e6809cb745f1cb26a6d919994400d27372303e276",
+      "license": "MIT",
+      "algorithm": "sha256",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "bge-daec91ffb5dd",
+      "version": "9f9fde527ed75fe41f8782fd3d25524d72aa52cc4b3e1cafbfb38c473f6f561e",
+      "url": "https://registry.ollama.ai/v2/library/bge-m3/blobs/sha256:daec91ffb5dd0c27411bd71f29932917c49cf529a641d0168496c3a501e3062c",
+      "digest": "daec91ffb5dd0c27411bd71f29932917c49cf529a641d0168496c3a501e3062c",
+      "size": 1157671200,
+      "destination": "models/ollama/blobs/sha256-daec91ffb5dd0c27411bd71f29932917c49cf529a641d0168496c3a501e3062c",
+      "license": "MIT",
+      "algorithm": "sha256",
+      "archive": false,
+      "expanded_limit": 0
+    },
+    {
+      "name": "bge-a406579cd136",
+      "version": "9f9fde527ed75fe41f8782fd3d25524d72aa52cc4b3e1cafbfb38c473f6f561e",
+      "url": "https://registry.ollama.ai/v2/library/bge-m3/blobs/sha256:a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde",
+      "digest": "a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde",
+      "size": 1068,
+      "destination": "models/ollama/blobs/sha256-a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde",
+      "license": "MIT",
+      "algorithm": "sha256",
+      "archive": false,
+      "expanded_limit": 0
+    }
+  ],
+  "unavailable": {
+    "ai-worker": "049 尚未生成可发布的工具/重排运行包"
+  },
+  "embedding_manifest_text": "{\n  \"schemaVersion\": 2,\n  \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n  \"config\": {\n    \"mediaType\": \"application/vnd.docker.container.image.v1+json\",\n    \"digest\": \"sha256:0c4c9c2a325fb1cdafec606e6809cb745f1cb26a6d919994400d27372303e276\",\n    \"size\": 337\n  },\n  \"layers\": [\n    {\n      \"mediaType\": \"application/vnd.ollama.image.model\",\n      \"digest\": \"sha256:daec91ffb5dd0c27411bd71f29932917c49cf529a641d0168496c3a501e3062c\",\n      \"size\": 1157671200\n    },\n    {\n      \"mediaType\": \"application/vnd.ollama.image.license\",\n      \"digest\": \"sha256:a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde\",\n      \"size\": 1068\n    }\n  ]\n}\n",
+  "mysql_archive_verification": {
+    "source": "https://downloads.mysql.com/archives/community/",
+    "published_md5": "225a7586d6a24c308b78d726a70841c6",
+    "observed_sha256": "e8d5b08f0d430555497679fa713a9649953ea067f952708a74cdcdf34f8e4b7d"
+  }
+}

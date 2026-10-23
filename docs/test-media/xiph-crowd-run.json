@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "xiph-svt-crowd-run-1080p50-v1",
+  "catalog_url": "https://media.xiph.org/video/derf/",
+  "copyright_holder": "Sveriges Television AB (SVT)",
+  "sha256_authority": "Computed locally after this download; not a publisher-provided checksum or signature.",
+  "source": {
+    "file": "crowd_run_1080p50.y4m",
+    "url": "https://media.xiph.org/video/derf/y4m/crowd_run_1080p50.y4m",
+    "size_bytes": 1555203036,
+    "sha256": "e056e01fc13906dd9a84f5cc686a36888436379476577965a0866821caaf55c8",
+    "downloaded_at": "2026-10-21T15:12:59.636711+00:00"
+  },
+  "license": {
+    "file": "SVT_MultiFormat_v10.pdf",
+    "url": "https://media.xiph.org/video/derf/vqeg.its.bldrdoc.gov/HDTV/SVT_MultiFormat/SVT_MultiFormat_v10.pdf",
+    "size_bytes": 683152,
+    "sha256": "9fd39b9db02375a086f8e65129177d4db37f275712cc3ace56fb71d007f9f13f",
+    "downloaded_at": "2026-10-21T15:03:06.801722+00:00"
+  },
+  "usage": "Only for developing, testing and presenting technology standards; see the full accompanying SVT PDF. Redistribution must include that PDF and must not charge a distribution fee.",
+  "xiph_conversion_note": "Xiph converts the original SVT 16-bit linear RGB to YCbCr; this file is the hosted 8-bit Y4M derivative, not the 16-bit RGB master.",
+  "expected": {
+    "container": "yuv4mpegpipe",
+    "codec": "rawvideo",
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "50/1",
+    "frames": 500,
+    "duration_us": 10000000,
+    "audio_streams": 0
+  }
+}

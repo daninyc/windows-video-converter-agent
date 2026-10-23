@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools==78.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "media-converter"
+version = "0.1.0"
+description = "Windows desktop video converter"
+requires-python = ">=3.13,<3.14"
+dependencies = ["PySide6==6.12.0", "pydantic==2.14.1"]
+
+[project.optional-dependencies]
+tools = ["mcp==2.3.0", "httpx==0.28.1", "qdrant-client==1.19.1", "mysql-connector-python==26.7.0", "pypdf==6.21.1", "python-docx==1.2.0"]
+cpu-rerank = ["sentence-transformers==6.1.0", "torch==2.14.1+cpu", "sentencepiece==0.2.2"]
+dev = ["pytest==9.1.1", "pytest-qt==4.5.0", "pytest-asyncio==1.4.0", "ruff==0.17.1", "PyInstaller==6.22.3"]
+
+[project.scripts]
+media-converter = "media_converter.__main__:main"
+media-converter-devtools = "media_converter.devtools.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+media_converter = ["storage/migrations/*.sql", "storage/mysql_migrations/*.sql", "services/components.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers --strict-config --basetemp=artifacts/tmp/pytest"
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+qt_api = "pyside6"
+junit_family = "xunit1"
+markers = ["unit: pure local logic", "gui: real Qt interaction", "integration: real local dependencies", "live_api: paid provider, explicit opt in", "stress: load and fault checks"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

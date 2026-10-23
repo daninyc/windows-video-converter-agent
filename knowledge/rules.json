@@ -1,0 +1,86 @@
+[
+  {
+    "rule_id": "app-mp4",
+    "rule_kind": "container",
+    "format": "mp4",
+    "codec": "h264",
+    "error_code": null,
+    "version": 1,
+    "source_ref": {
+      "document_id": "app",
+      "section_id": "mp4",
+      "source_path": "src/media_converter/media/settings.py"
+    },
+    "text": "本应用 MP4 默认使用 libx264 编码 H.264 视频、AAC 音频与 CRF 23。默认保持原分辨率和帧率。轨道选择与目标兼容性由规划器明确确定。播放器或设备的具体支持范围仍需设备资料和实际播放验证，不能把应用能生成文件等同于所有设备都能播放。"
+  },
+  {
+    "rule_id": "app-webm",
+    "rule_kind": "container",
+    "format": "webm",
+    "codec": "vp9",
+    "error_code": null,
+    "version": 1,
+    "source_ref": {
+      "document_id": "app",
+      "section_id": "webm",
+      "source_path": "src/media_converter/media/compatibility.py"
+    },
+    "text": "本应用 WebM 使用 libvpx-vp9 视频和 Opus 音频，默认质量值为 32。字幕按本应用兼容表处理，WebVTT 可被保留，不支持的字幕会列入丢失清单。输出计划不会把 MP4 的 AAC 音轨简单复制到 WebM；最终仍以本机编码器、封装能力和输出验证为准。"
+  },
+  {
+    "rule_id": "app-mkv",
+    "rule_kind": "container",
+    "format": "mkv",
+    "codec": "h264",
+    "error_code": null,
+    "version": 1,
+    "source_ref": {
+      "document_id": "app",
+      "section_id": "mkv",
+      "source_path": "src/media_converter/media/compatibility.py"
+    },
+    "text": "应用 MKV 默认使用 H.264 视频和 AAC 音频，按规划器兼容规则保留多音轨和可支持的字幕。Matroska 容器适合容纳多条轨道，但不能据此保证任意流都被本应用支持。应对照具体输入的轨数、编码和语言检查计划；不兼容轨道仍需列明并确认。"
+  },
+  {
+    "rule_id": "app-subtitles",
+    "rule_kind": "subtitle",
+    "format": "mp4",
+    "codec": "mov_text",
+    "error_code": null,
+    "version": 1,
+    "source_ref": {
+      "document_id": "app",
+      "section_id": "subtitles",
+      "source_path": "src/media_converter/media/compatibility.py"
+    },
+    "text": "本应用在 MP4 中保留兼容的 mov_text 文本字幕。ASS 或 SubRip 的兼容处理以当前计划为准，不支持时会产生具体丢失项。字幕丢失确认绑定本次 plan_hash；取消确认不能启动，旧计划的同意也不能直接用于新计划。保留文本不代表所有样式、字体和特效都能保持一致。"
+  },
+  {
+    "rule_id": "app-crf",
+    "rule_kind": "quality",
+    "format": null,
+    "codec": "libx264",
+    "error_code": null,
+    "version": 1,
+    "source_ref": {
+      "document_id": "app",
+      "section_id": "crf",
+      "source_path": "src/media_converter/media/settings.py"
+    },
+    "text": "本应用提供 CRF 和固定码率两种互斥模式。CRF 模式用质量值控制编码，文件大小取决于内容，不能提前保证精确体积。固定码率模式需要正的目标视频码率，不同时保留 CRF 数值。libx264 的 CRF 参数必须由对应编码器解释，不应把不同编码器同一数值当成相同画质。"
+  },
+  {
+    "rule_id": "app-storage",
+    "rule_kind": "error",
+    "format": null,
+    "codec": null,
+    "error_code": "STORE_WRITE_FAILED",
+    "version": 1,
+    "source_ref": {
+      "document_id": "app",
+      "section_id": "storage",
+      "source_path": "src/media_converter/jobs/job_service.py"
+    },
+    "text": "SQLite 保存本地转换状态，与待同步 outbox 在事务中写入。输出发布后若保存终态失败，文件保留且提示 STORE_WRITE_FAILED，不冒充成功。重启把仍活动的尝试标为中断，不自动重跑。MySQL 服务不可用时基本转换仍可使用，查询结果应说明同步滞后。"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "version": "knowledge-v1-2026-10-22",
+  "authorship": "Original factual summaries of this application and its SPEC; no third-party manual text copied.",
+  "documents": [
+    {
+      "document_id": "app",
+      "path": "application.md",
+      "license": "Original project text; project distribution license remains pending owner decision C05. External links are references, not copied manuals.",
+      "content_sha256": "6ef91f77bb8db25942d82c1631f7f02b480dd61434312ab23ee5525e5f250c70",
+      "reviewed_at": "2026-10-22",
+      "sections": [
+        {
+          "id": "import",
+          "heading": "导入与递归",
+          "source_path": "src/media_converter/media/importer.py",
+          "source_url": null
+        },
+        {
+          "id": "probe",
+          "heading": "元数据与未知值",
+          "source_path": "src/media_converter/media/probe.py",
+          "source_url": null
+        },
+        {
+          "id": "container",
+          "heading": "容器和编码的区别",
+          "source_path": "src/media_converter/media/compatibility.py",
+          "source_url": null
+        },
+        {
+          "id": "mp4",
+          "heading": "MP4 默认设置",
+          "source_path": "src/media_converter/media/settings.py",
+          "source_url": null
+        },
+        {
+          "id": "mkv",
+          "heading": "MKV 与轨道保留",
+          "source_path": "src/media_converter/media/compatibility.py",
+          "source_url": null
+        },
+        {
+          "id": "webm",
+          "heading": "WebM 默认设置",
+          "source_path": "src/media_converter/media/compatibility.py",
+          "source_url": null
+        },
+        {
+          "id": "crf",
+          "heading": "CRF 与固定码率",
+          "source_path": "src/media_converter/media/settings.py",
+          "source_url": "https://ffmpeg.org/ffmpeg-codecs.html#libx264_002c-libx264rgb"
+        },
+        {
+          "id": "resolution",
+          "heading": "保持比例的分辨率范围",
+          "source_path": "src/media_converter/media/planner.py",
+          "source_url": null
+        },
+        {
+          "id": "framerate",
+          "heading": "帧率与旋转",
+          "source_path": "src/media_converter/media/planner.py",
+          "source_url": null
+        },
+        {
+          "id": "mapping",
+          "heading": "显式轨道映射 -map",
+          "source_path": "src/media_converter/media/planner.py",
+          "source_url": "https://ffmpeg.org/ffmpeg.html#Stream-selection"
+        },
+        {
+          "id": "subtitles",
+          "heading": "mov_text 与字幕确认",
+          "source_path": "src/media_converter/media/compatibility.py",
+          "source_url": null
+        },
+        {
+          "id": "output",
+          "heading": "保存位置与原件保护",
+          "source_path": "src/media_converter/media/output_paths.py",
+          "source_url": null
+        },
+        {
+          "id": "batch",
+          "heading": "顺序批次与参数快照",
+          "source_path": "src/media_converter/jobs/job_service.py",
+          "source_url": null
+        },
+        {
+          "id": "cancel",
+          "heading": "取消与重试",
+          "source_path": "src/media_converter/jobs/job_service.py",
+          "source_url": null
+        },
+        {
+          "id": "validation",
+          "heading": "输出验证与成功状态",
+          "source_path": "src/media_converter/jobs/output_validator.py",
+          "source_url": null
+        },
+        {
+          "id": "storage",
+          "heading": "存储失败与重启",
+          "source_path": "src/media_converter/jobs/job_service.py",
+          "source_url": null
+        },
+        {
+          "id": "presets",
+          "heading": "预设与环境能力",
+          "source_path": "src/media_converter/media/presets.py",
+          "source_url": null
+        },
+        {
+          "id": "authority",
+          "heading": "Agent 权限与固定引用",
+          "source_path": "SPEC.md#3.6",
+          "source_url": null
+        },
+        {
+          "id": "files",
+          "heading": "文档读取与不可信内容",
+          "source_path": "SPEC.md#5.3",
+          "source_url": null
+        },
+        {
+          "id": "evidence",
+          "heading": "来源与证据不足",
+          "source_path": "SPEC.md#3.5",
+          "source_url": null
+        }
+      ]
+    }
+  ]
+}

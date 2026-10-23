@@ -1,0 +1,17 @@
+environment/
+.env
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+data/
+artifacts/
+dist/
+build/
+*.egg-info/
+*.egg/
+.env.*
+*.sqlite*
+*.dpapi
+*.pem
+*.pfx
+*.p12
